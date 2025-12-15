@@ -6,9 +6,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Akira Sushi - Culinária Japonesa</title>
+    <title>Tita Ko Naka Ma - Culinária Japonesa</title>
     
     <style>
+
         .carousel-item img {
             height: 400px;
             object-fit: cover;
@@ -23,7 +24,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">🍣 Akira Sushi</a>
+            <a class="navbar-brand fw-bold" href="#">🍣 Tita Ko Naka Ma</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -46,7 +47,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h1 class="mb-3 display-4 fw-bold">Bem-vindo ao Akira Sushi</h1>
+                    <h1 class="mb-3 display-4 fw-bold">Bem-vindo ao Tita Ko Naka Ma</h1>
                     <p class="lead">A tradição milenar do Japão, agora na sua cidade. Experimente o frescor dos nossos peixes e a arte dos nossos sushimans.</p>
                     <p>Ambiente familiar, perfeito para jantares românticos ou reuniões de negócios. Venha viver essa experiência.</p>
                     <a href="#reservas" class="btn btn-danger btn-lg mt-3">Fazer Reserva</a>
@@ -56,13 +57,13 @@
                     <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner rounded shadow">
                             <div class="carousel-item active">
-                                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=800&auto=format&fit=crop" class="d-block w-100" alt="Sushi">
+                                <img src="img/exterior.webp" class="d-block w-100" alt="Sushi">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?q=80&w=800&auto=format&fit=crop" class="d-block w-100" alt="Ambiente">
+                                <img src="img/temaki.png" class="d-block w-100" alt="Ambiente">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=800&auto=format&fit=crop" class="d-block w-100" alt="Prato Especial">
+                                <img src="img/interior.webp" class="d-block w-100" alt="Prato Especial">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
@@ -93,7 +94,7 @@
                                 <tbody>
                                     <tr><td>Segunda a Quinta</td><td>11:30 - 14:30</td><td>18:30 - 23:00</td></tr>
                                     <tr><td>Sexta e Sábado</td><td>11:30 - 15:00</td><td>18:30 - 00:00</td></tr>
-                                    <tr><td>Domingo</td><td>12:00 - 16:00</td><td>Fechado</td></tr>
+                                    <tr><td>Domingo</td><td>12:00 - 16:00</td><td>18:30 - 22:00</td></tr>
                                 </tbody>
                             </table>
                         </div>
@@ -103,78 +104,121 @@
         </div>
     </section>
 
-    <section id="cardapio" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Nosso Cardápio</h2>
+   <section id="cardapio" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nosso Cardápio</h2>
 
-            <ul class="nav nav-tabs justify-content-center mb-4" id="myTab" role="tablist">
-                <li class="nav-item"><button class="nav-link active text-danger" id="sushi-tab" data-bs-toggle="tab" data-bs-target="#sushi" type="button">Sushis</button></li>
-                <li class="nav-item"><button class="nav-link text-danger" id="quentes-tab" data-bs-toggle="tab" data-bs-target="#quentes" type="button">Pratos Quentes</button></li>
-            </ul>
+        <ul class="nav nav-tabs justify-content-center mb-4" id="myTab" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active text-danger" id="sushi-tab" data-bs-toggle="tab" data-bs-target="#sushi" type="button">Sushis</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link text-danger" id="quentes-tab" data-bs-toggle="tab" data-bs-target="#quentes" type="button">Pratos Quentes</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link text-danger" id="sobremesas-tab" data-bs-toggle="tab" data-bs-target="#sobremesas" type="button">Sobremesas</button>
+            </li>
+        </ul>
 
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="sushi">
-                    <div class="row g-4">
-                        <div class="col-12 col-md-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="img/temaki.png" class="card-img-top" alt="Temaki">
-                                <div class="card-body">
-                                    <h5 class="card-title">Temaki Salmão <span class="badge bg-warning text-dark">Especial</span></h5>
-                                    <p class="card-text">Cone de alga crocante com arroz, salmão fresco em cubos e cebolinha.</p>
-                                    <h6 class="text-danger">R$ 24,90</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Combo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Combo Akira (20 Peças)</h5>
-                                    <p class="card-text">Seleção do chef com sashimis, niguiris e uramakis variados.</p>
-                                    <h6 class="text-danger">R$ 89,90</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Sashimi">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sashimi de Atum</h5>
-                                    <p class="card-text">10 fatias frescas de atum selecionado.</p>
-                                    <h6 class="text-danger">R$ 45,00</h6>
-                                </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="sushi">
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/temaki.png" class="card-img-top" alt="Temaki">
+                            <div class="card-body">
+                                <h5 class="card-title">Temaki Salmão <span class="badge bg-warning text-dark">Especial</span></h5>
+                                <p class="card-text">Cone de alga crocante com arroz, salmão fresco em cubos e cebolinha.</p>
+                                <h6 class="text-danger">R$ 24,90</h6>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="tab-pane fade" id="quentes">
-                    <div class="row g-4">
-                        <div class="col-12 col-md-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Ramen">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tonkotsu Ramen</h5>
-                                    <p class="card-text">Macarrão artesanal em caldo de porco cozido por 12h.</p>
-                                    <h6 class="text-danger">R$ 42,00</h6>
-                                </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/barca20.jpg" class="card-img-top" alt="Combo">
+                            <div class="card-body">
+                                <h5 class="card-title">Combo Akira (20 Peças)</h5>
+                                <p class="card-text">Seleção do chef com sashimis, niguiris e uramakis variados.</p>
+                                <h6 class="text-danger">R$ 89,90</h6>
                             </div>
                         </div>
-                         <div class="col-12 col-md-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Yakisoba">
-                                <div class="card-body">
-                                    <h5 class="card-title">Yakisoba Misto</h5>
-                                    <p class="card-text">Macarrão frito com legumes, carne e frango ao molho especial.</p>
-                                    <h6 class="text-danger">R$ 35,00</h6>
-                                </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/atum.jpg" class="card-img-top" alt="Sashimi">
+                            <div class="card-body">
+                                <h5 class="card-title">Sashimi de Atum</h5>
+                                <p class="card-text">10 fatias frescas de atum selecionado.</p>
+                                <h6 class="text-danger">R$ 45,00</h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="tab-pane fade" id="quentes">
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/TonkotsuRamen.webp" class="card-img-top" alt="Ramen">
+                            <div class="card-body">
+                                <h5 class="card-title">Tonkotsu Ramen</h5>
+                                <p class="card-text">Macarrão artesanal em caldo de porco cozido por 12h.</p>
+                                <h6 class="text-danger">R$ 42,00</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/yakissoba.jpg" class="card-img-top" alt="Yakisoba">
+                            <div class="card-body">
+                                <h5 class="card-title">Yakisoba Misto</h5>
+                                <p class="card-text">Macarrão frito com legumes, carne e frango ao molho especial.</p>
+                                <h6 class="text-danger">R$ 35,00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="sobremesas">
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/sorvete.webp" class="card-img-top" alt="Tempura de Sorvete">
+                            <div class="card-body">
+                                <h5 class="card-title">Sorvete</h5>
+                                <p class="card-text">Além do sorvete de casquinha normal encontramos também bolinhos de arroz recheados com sorvete – yukimi daifuku – e diversas outras combinações criativas e deliciosas!</p>
+                                <h6 class="text-danger">R$ 22,00</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/gelatinaDeCafé.webp" class="card-img-top" alt="Mochi">
+                            <div class="card-body">
+                                <h5 class="card-title">Gelatina de café</h5>
+                                <p class="card-text">A gelatina de café é muito apreciada como sobremesa no Japão. Por lá a chamam de kohi zeri e é servida com chantilly, sorvete, geleias ou leite condensado.</p>
+                                <h6 class="text-danger">R$ 18,00</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/parfait.webp" class="card-img-top" alt="Frutas Tropicais">
+                            <div class="card-body">
+                                <h5 class="card-title">Parfait de Frutas</h5>
+                                <p class="card-text">O parfait foi inspirado em um doce francês e hoje é uma das sobremesas mais populares no Japão. É feito de sorvete, flocos de milho com chantilly e frutas frescas. É uma sobremesa leve e refrescante.</p>
+                                <h6 class="text-danger">R$ 14,00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
+
 
     <section id="sobre" class="bg-light py-5">
         <div class="container">
@@ -182,7 +226,7 @@
                 <div class="col-lg-6">
                     <h2 class="mb-3">Sobre Nós</h2>
                     <h3 class="h5 mt-3">História</h3>
-                    <p>Fundado em 2010, o Akira Sushi nasceu do sonho do Chef Akira de trazer a autêntica culinária de Kyoto para o Brasil. Valorizamos ingredientes frescos e o respeito às técnicas tradicionais.</p>
+                    <p>Fundado em 2010, o Tita Ko Naka Ma nasceu do sonho do Chef Akira de trazer a autêntica culinária de Kyoto para o Brasil. Valorizamos ingredientes frescos e o respeito às técnicas tradicionais.</p>
                     
                     <h3 class="h5 mt-3">O Chef</h3>
                     <p>Com mais de 20 anos de experiência e passagens por restaurantes premiados no Japão, o Chef Akira lidera nossa cozinha com maestria e precisão.</p>
@@ -327,7 +371,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-2">📍 Rua das Cerejeiras, 123 - Centro</li>
                         <li class="mb-2">📞 (82) 3333-4444</li>
-                        <li class="mb-2">📧 contato@akirasushi.com.br</li>
+                        <li class="mb-2">📧 contato@titakonakama.com.br</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
